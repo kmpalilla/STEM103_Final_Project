@@ -49,7 +49,7 @@ elif error_encountered == "Y": # User does want to submit ticket
     users_error = input("What was the error that occured? Please provide a error code if able: ")
     with open('user_info.txt', 'w') as file: # Writes file into the user_info.txt file.
         # Current implementation overwrites all prior entries so only one time use.
-        file.write(tech_first_name + "\n" + tech_last_name + "\n" + user_intentions + "\n" + users_error + "\n\n")
+        file.write(tech_first_name + "\n" + tech_last_name + "\n" + user_dept + "\n" + user_intentions + "\n" + users_error + "\n\n")
         for i in keypress_list: # Writes all keyboard inputs recorded into the file as well
             file.write(str(i) + "\n") # Separates each input with a new line.
 
